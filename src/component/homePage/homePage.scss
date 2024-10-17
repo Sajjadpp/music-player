@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.featrued{
+    color: #fff;
+    height: 30%;
+    padding: 30px 10px;
+    font-family: "Montserrat";
+
+    .card-container{
+
+        display: flex;
+        gap: 10px;
+        overflow-x: scroll;
+        margin-top: 20px;
+    }
+    .card{
+        background-color: #fff;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        border-radius: 5px;
+        justify-content: space-around;
+        padding: 15px 20px;
+    }
+
+    .card .img{
+
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        height: 100px;
+        
+    }
+    .card .img img{
+        width: 120px;
+        height: 120px;
+        background-color: blanchedalmond;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    @media (max-width: 700px){
+    
+        .card{
+            min-width: 90%;
+    
+        }
+    }
+}
+
+
+
+/* *-----------------------------------------playlist for you ------------------------------------------------ */
+
+.playlist{
+
+    margin-top: 0px;
+    padding: 10px;
+    color: #fff;
+    font-family: "Montserrat";
+    font-weight: 900;
+
+
+    .card-container{
+
+        display: flex;       
+        gap: 20px;
+        overflow-x: scroll;
+        margin-top: 20px;   
+    }
+    .card{
+
+        min-width: 110px;
+        height: 120px;
+    }
+    .card .img{
+        
+        background-color: brown;
+        width: 100%;
+        height: 100px;
+    }   
+}
